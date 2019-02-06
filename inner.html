@@ -7,7 +7,7 @@
   <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo" href="#">
+    <a class="main-header-logo" href="index.html">
     <img src="img/nerds-logo.svg" width="165" height="65" alt="Лого студии Nerds">
     </a>
     <ul class="site-navigation">
@@ -24,8 +24,47 @@
   </header>
   <main class="container">
 <section class="filters">
-    <h2 class="visually-hidden">Фильтры</h2>
-    <!--здесь будет форма-->
+    <form class="filters" method="POST" action="https://echo.htmlacademy.ru">
+    <legend>Сетка:</legend>
+    <ul>
+      <li>
+        <input type="radio" name="grid" value="adaptive" id="filter-adaptive"> 
+        <label for="filter-adaptive">Адаптивная</label>
+      </li>
+      <li>
+          <input type="radio" name="grid" value="fixed" id="filter-fixed"> 
+          <label for="filter-fixed">Фиксированная</label>
+        </li>
+        <li>
+            <input type="radio" name="grid" value="rubber" id="filter-rubber"> 
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+    </ul>
+    <legend>Особенности:</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="slider" id="filter-slider">
+        <label for="filter-slider">Слайдер</label>
+      </li>
+      <li>
+          <input type="checkbox" name="block-plus" id="filter-block-plus">
+          <label for="filter-block-plus">Блок преимуществ</label>
+        </li>
+        <li>
+            <input type="checkbox" name="news" id="filter-news">
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+              <input type="checkbox" name="Galary" id="filter-galary">
+              <label for="filter-galary">Галерея</label>
+            </li>
+            <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзрина</label>
+              </li>
+    </ul>
+    <button type="submit">Показать</button>
+    </form>
 </section>
 <section class="catalog">
   <div>
@@ -36,7 +75,7 @@
       <div>
           <h3>SEDONA</h3>
           <p>Информационный сайт для туристов</p>
-          <a calss="button" href="#">9 900 РУБ.</a>
+          <a calss="button" href="sedona.html">9 900 РУБ.</a>
       </div>
     </div>
     <div>
@@ -47,7 +86,7 @@
         <div>
             <h3>PINK</h3>
             <p>Мобильные лендинги</p>
-            <a calss="button" href="#">9 900 РУБ.</a>
+            <a calss="button" href="pink.html">9 900 РУБ.</a>
         </div>
     </div>
     <div>
@@ -58,7 +97,7 @@
           <div>
               <h3>Borodinski</h3>
               <p>Стрижки и бороды</p>
-              <a calss="button" href="#">9 900 РУБ.</a>
+              <a calss="button" href="barbershop.html">9 900 РУБ.</a>
           </div>
     </div>
     <div>
@@ -69,7 +108,7 @@
             <div>
                 <h3>MISHKA</h3>
                 <p>Магазин вязаных корзинок</p>
-                <a calss="button" href="#">9 900 РУБ.</a>
+                <a calss="button" href="mishka.html">9 900 РУБ.</a>
             </div>
     </div>
     <div>
@@ -80,7 +119,7 @@
       <div>
           <h3>А+</h3>
           <p>Подготовительные курсы для взрослых</p>
-          <a calss="button" href="#">9 900 РУБ.</a>
+          <a calss="button" href="Aplus.html">9 900 РУБ.</a>
       </div>
     </div>
     <div>
@@ -91,7 +130,7 @@
         <div>
             <h3>КВАСТ</h3>
             <p>Завод по производству крафтового кваса</p>
-            <a calss="button" href="#">9 900 РУБ.</a>
+            <a calss="button" href="kvast.html">9 900 РУБ.</a>
         </div>
       </div>
 </section>
@@ -99,9 +138,9 @@
   <footer class="main-footer">
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="https://vk.com/">вк</a></li>
+            <li><a class="social-button" href="https://facebook.com/"></a>ФБ</li>
+            <li><a class="social-button" href="https://www.instagram.com"></a>Инст</li>
               </ul> 
           </div>
   <div>
@@ -109,6 +148,24 @@
     <p>Скидка 10% для друзей из социальных сетей</p>
   </div>
       </footer>
+      <div class="popup">
+          <h1>Напиишите нам</h1>
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="appointment-name">Ваше имя</label>
+              <input type="text" name="name" id="appointment-name" placeholder="Имя фамилия">
+            </p>
+            <p>
+                <label for="appointment-email">Ваш e-mail</label>
+                <input type="text" name="email" id="appointment-email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="appointment-text">Текст письма</label>
+                <input type="text" name="text" id="appointment-text" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+      </div>
       </body>
     </html>
  

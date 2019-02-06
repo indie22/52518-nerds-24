@@ -7,7 +7,7 @@
   <body>
 <header class="main-header">
   <nav class="main-navigation">   
-    <a class="main-header-logo" href="#">
+    <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="165" height="65" alt="Лого студии Nerds">
     </a>
     <ul class="site-navigation">
@@ -17,7 +17,9 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
-      <li class="basket-link">Корзина</li>
+      <li> 
+        <a class="basket-link" href="basket.html">Корзина<a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -44,9 +46,9 @@
   <footer class="main-footer">
     <div class="footer-social">
         <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="https://vk.com/">Вконтакте</a></li>
+            <li><a class="social-button" href="https://facebook.com/">Фейсбук</a></li>
+            <li><a class="social-button" href="https://www.instagram.com">Инст</a></li>
           </ul> 
       </div>
       <div>
@@ -54,5 +56,23 @@
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
   </footer>
+  <div class="popup">
+    <h1>Напиишите нам</h1>
+    <form action="http://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="appointment-name">Ваше имя</label>
+        <input type="text" name="name" id="appointment-name" placeholder="Имя фамилия">
+      </p>
+      <p>
+          <label for="appointment-email">Ваш e-mail</label>
+          <input type="text" name="email" id="appointment-email" placeholder="email@example.com">
+      </p>
+      <p>
+          <label for="appointment-text">Текст письма</label>
+          <input type="text" name="text" id="appointment-text" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </div>
   </body>
 </html>
